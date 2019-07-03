@@ -1,0 +1,14 @@
+C:\Users\epagl\source\repos\BubbleSortExample\BusinessLayer\bin\Debug\BusinessLayer.exe.config
+C:\Users\epagl\source\repos\BubbleSortExample\BusinessLayer\bin\Debug\BusinessLayer.exe
+C:\Users\epagl\source\repos\BubbleSortExample\BusinessLayer\bin\Debug\BusinessLayer.pdb
+C:\Users\epagl\source\repos\BubbleSortExample\BusinessLayer\bin\Debug\DAL.exe
+C:\Users\epagl\source\repos\BubbleSortExample\BusinessLayer\bin\Debug\Entities.exe
+C:\Users\epagl\source\repos\BubbleSortExample\BusinessLayer\bin\Debug\DAL.pdb
+C:\Users\epagl\source\repos\BubbleSortExample\BusinessLayer\bin\Debug\DAL.exe.config
+C:\Users\epagl\source\repos\BubbleSortExample\BusinessLayer\bin\Debug\Entities.pdb
+C:\Users\epagl\source\repos\BubbleSortExample\BusinessLayer\bin\Debug\Entities.exe.config
+C:\Users\epagl\source\repos\BubbleSortExample\BusinessLayer\obj\Debug\BusinessLayer.csprojAssemblyReference.cache
+C:\Users\epagl\source\repos\BubbleSortExample\BusinessLayer\obj\Debug\BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\epagl\source\repos\BubbleSortExample\BusinessLayer\obj\Debug\BusinessLayer.csproj.CopyComplete
+C:\Users\epagl\source\repos\BubbleSortExample\BusinessLayer\obj\Debug\BusinessLayer.exe
+C:\Users\epagl\source\repos\BubbleSortExample\BusinessLayer\obj\Debug\BusinessLayer.pdb

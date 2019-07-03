@@ -1,0 +1,7 @@
+C:\Users\epagl\source\repos\BubbleSortExample\BubbleSortExample\bin\Debug\BubbleSortExample.exe.config
+C:\Users\epagl\source\repos\BubbleSortExample\BubbleSortExample\bin\Debug\BubbleSortExample.exe
+C:\Users\epagl\source\repos\BubbleSortExample\BubbleSortExample\bin\Debug\BubbleSortExample.pdb
+C:\Users\epagl\source\repos\BubbleSortExample\BubbleSortExample\obj\Debug\BubbleSortExample.csprojAssemblyReference.cache
+C:\Users\epagl\source\repos\BubbleSortExample\BubbleSortExample\obj\Debug\BubbleSortExample.csproj.CoreCompileInputs.cache
+C:\Users\epagl\source\repos\BubbleSortExample\BubbleSortExample\obj\Debug\BubbleSortExample.exe
+C:\Users\epagl\source\repos\BubbleSortExample\BubbleSortExample\obj\Debug\BubbleSortExample.pdb

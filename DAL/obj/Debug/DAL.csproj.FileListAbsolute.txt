@@ -1,0 +1,16 @@
+C:\Users\epagl\source\repos\BubbleSortExample\DAL\bin\Debug\DAL.exe.config
+C:\Users\epagl\source\repos\BubbleSortExample\DAL\bin\Debug\DAL.exe
+C:\Users\epagl\source\repos\BubbleSortExample\DAL\bin\Debug\DAL.pdb
+C:\Users\epagl\source\repos\BubbleSortExample\DAL\bin\Debug\Entities.exe
+C:\Users\epagl\source\repos\BubbleSortExample\DAL\bin\Debug\Newtonsoft.Json.dll
+C:\Users\epagl\source\repos\BubbleSortExample\DAL\bin\Debug\Stripe.net.dll
+C:\Users\epagl\source\repos\BubbleSortExample\DAL\bin\Debug\Entities.pdb
+C:\Users\epagl\source\repos\BubbleSortExample\DAL\bin\Debug\Entities.exe.config
+C:\Users\epagl\source\repos\BubbleSortExample\DAL\bin\Debug\Newtonsoft.Json.xml
+C:\Users\epagl\source\repos\BubbleSortExample\DAL\bin\Debug\Stripe.net.pdb
+C:\Users\epagl\source\repos\BubbleSortExample\DAL\bin\Debug\Stripe.net.xml
+C:\Users\epagl\source\repos\BubbleSortExample\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+C:\Users\epagl\source\repos\BubbleSortExample\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\epagl\source\repos\BubbleSortExample\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\epagl\source\repos\BubbleSortExample\DAL\obj\Debug\DAL.exe
+C:\Users\epagl\source\repos\BubbleSortExample\DAL\obj\Debug\DAL.pdb
