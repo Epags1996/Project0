@@ -53,7 +53,7 @@ namespace Entities
             }
             else
             {
-                return $"You can't take out from your account before this date {accountCreated.AddMonths(6)}";
+                return $"You can't take out money from this account for {accountCreated.AddMonths(12)} months";
             }
 
         }
@@ -72,9 +72,6 @@ namespace Entities
             return $"You have added{deposit} dollars from your account with the account number {this.accountID}. Your new  balance is: {this.accountBalance }dollars.";
 
         }
-
-
-
         public List<Transactions> get()
         {
             return this.transList;

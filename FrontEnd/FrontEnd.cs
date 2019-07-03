@@ -117,11 +117,12 @@ namespace FrontEnd
         {
             //Starting Menu, used to register a new customer, create banking accounts, do a transaction, and view accounts
             Console.WriteLine("Welcome to Eric Pagliari's work in progress.");
-            Console.WriteLine("What would you like to do?");
-            Console.WriteLine("1. Register");
-            Console.WriteLine("2. Create Account");
-            Console.WriteLine("3. Transaction");
-            Console.WriteLine("4. View Accounts");
+            Console.WriteLine("If you find a bug, it's called a feature.\n");
+            Console.WriteLine("What would you like to do?\n");
+            Console.WriteLine("1. Register\n");
+            Console.WriteLine("2. Create Account\n");
+            Console.WriteLine("3. Transaction\n");
+            Console.WriteLine("4. View Accounts\n");
             string response = Console.ReadLine();
 
             switch (response)
@@ -139,11 +140,11 @@ namespace FrontEnd
                     int customerID = getCustomerID();
 
                     //List of 4 accounts a customer can make
-                    Console.WriteLine("What type of account would you like");
-                    Console.WriteLine("1. Business");
-                    Console.WriteLine("2. Checking");
-                    Console.WriteLine("3. Loan");
-                    Console.WriteLine("4. Term");
+                    Console.WriteLine("What type of account would you like\n");
+                    Console.WriteLine("1. Business Account\n");
+                    Console.WriteLine("2. Checking Account\n");
+                    Console.WriteLine("3. Loan Account\n");
+                    Console.WriteLine("4. Term Account\n");
                     string accType = Console.ReadLine();
                     double intrest = 0.00;
                     double bal = 0;
@@ -187,7 +188,7 @@ namespace FrontEnd
                     else if (accType == "3")
                     {
                         accType = "Loan Account";
-                        intrest = 5.0;
+                        intrest = 25.0;
                         Console.WriteLine("How much are you taking out on this loan?");
                         bal = 0 - Convert.ToInt32(Console.ReadLine());
 
@@ -248,13 +249,13 @@ namespace FrontEnd
                         main();
                     }
                     //Menu with list of things a customer can do with once they open up there account
-                    Console.WriteLine("What you doing today?");
-                    Console.WriteLine("1. Check Balance");
-                    Console.WriteLine("2. Deposit");
-                    Console.WriteLine("3. Withdraw");
-                    Console.WriteLine("4. Transfer");
-                    Console.WriteLine("5. View Transactions");
-                    Console.WriteLine("6. Remove account");
+                    Console.WriteLine("What would you like to do with your account?\n");
+                    Console.WriteLine("1. Check Balance\n");
+                    Console.WriteLine("2. Deposit\n");
+                    Console.WriteLine("3. Withdraw\n");
+                    Console.WriteLine("4. Transfer\n");
+                    Console.WriteLine("5. View Transactions\n");
+                    Console.WriteLine("6. Remove account\n");
                     string transactionsType = Console.ReadLine();
 
                     //Shows customer account balance
@@ -521,111 +522,5 @@ namespace FrontEnd
                     break;
             }
         }
-
-        //used to validate a customers ID making sure they actually have an acocunt
-        //public static bool customerID(int customerID)
-        //{
-        //    bool valid = false;
-
-        //    foreach (Customer item in BankDAL.CusList)
-        //    {
-        //        if (item.CustomerID == customerID)
-        //        {
-        //            valid = true;
-        //        }
-        //    }
-
-        //    return valid;
-        //}
-
-        //public static bool accountIDValidation(int accountID)
-        //{
-        //    bool valid = false;
-
-        //    foreach (Account item in BankDAL.AccList)
-        //    {
-        //        if (item.accountID == accountID)
-        //        {
-        //            valid = true;
-        //        }
-        //    }
-
-        //    return valid;
-        //}
-
-        //public static void incorrectKey()
-        //{
-        //    Console.WriteLine("You have pressed an incorrect key");
-        //    Console.WriteLine("Press <Enter> to return to the start menu");
-        //    FrontEnd.frontEnd();
-        //}
-
-        //public static void main()
-        //{
-        //    Console.WriteLine("Press <Enter> to return to the start menu");
-        //    Console.ReadLine();
-        //    FrontEnd.frontEnd();
-        //}
-
-        //public static int getCustomerID()
-        //{
-        //    try
-        //    {
-        //        int custId = Convert.ToInt32(Console.ReadLine());
-        //        if (!customerID(custId))
-        //        {
-        //            Console.WriteLine("This customer account does not exist.");
-        //            main();
-        //        }
-        //        return custId;
-        //    }
-        //    catch
-        //    {
-        //        Console.WriteLine("Invalid Customer ID");
-        //        FrontEnd.frontEnd();
-        //        return 0;
-        //    }
-        //}
-
-
-
-        //public static int getAccountID()
-        //{
-        //    try
-        //    {
-        //        int accountId = Convert.ToInt32(Console.ReadLine());
-        //        if (!accountIDValidation(accountId))
-        //        {
-        //            Console.WriteLine("This banking account does not exist.");
-        //            Console.WriteLine("Please press enter to return to the main menu");
-        //            Console.ReadLine();
-        //            FrontEnd.frontEnd();
-        //        }
-        //        return accountId;
-        //    }
-        //    catch
-        //    {
-        //        incorrectKey();
-        //        return 0;
-        //    }
-        //}
-
-        //public static double getWithdrawDepositTransfer()
-        //{
-
-        //    try
-        //    {
-        //        double withdrawDepositTransfer = Convert.ToInt32(Console.ReadLine());
-
-        //        return withdrawDepositTransfer;
-        //    }
-        //    catch
-        //    {
-        //        incorrectKey();
-        //        return 0;
-        //    }
-        //}
-
-
     }
 }
