@@ -116,6 +116,7 @@ namespace FrontEnd
         public static void frontEnd()//front end that the customer sees
         {
             //Starting Menu, used to register a new customer, create banking accounts, do a transaction, and view accounts
+            Console.Clear();
             Console.WriteLine("Welcome to Eric Pagliari's work in progress.");
             Console.WriteLine("If you find a bug, it's called a feature.\n");
             Console.WriteLine("What would you like to do?\n");
@@ -129,13 +130,17 @@ namespace FrontEnd
             {
                 //user inputs 1, switch case creates and account
                 case "1":
+                    Console.Clear();
                     CustomerBL customerBL = new CustomerBL();
                     customerBL.CreateCustomer();
+                    Console.WriteLine("Press <Enter> to return to the start menu");
+                    Console.ReadLine();
                     frontEnd();
                     break;
                 //user inputs 2, asks for a customer id, if a correct customer id is added a second menu is shown that
                 //allows them to choose what account to make
                 case "2":
+                    Console.Clear();
                     Console.WriteLine("What's your customer id");
                     int customerID = getCustomerID();
 
@@ -233,9 +238,13 @@ namespace FrontEnd
                         incorrectKey();
                         FrontEnd.frontEnd();
                     }
+                    Console.WriteLine("Press <Enter> to return to the start menu");
+                    Console.ReadLine();
+                    FrontEnd.frontEnd();
                     break;
                 //Customer selects 3, if inputs valid account id and customer id and another menu is shown
                 case "3":
+                    Console.Clear();
                     Console.WriteLine("What's your account ID");
                     int accountId = getAccountID();
 
@@ -249,6 +258,7 @@ namespace FrontEnd
                         main();
                     }
                     //Menu with list of things a customer can do with once they open up there account
+                    Console.Clear();
                     Console.WriteLine("What would you like to do with your account?\n");
                     Console.WriteLine("1. Check Balance\n");
                     Console.WriteLine("2. Deposit\n");
@@ -261,13 +271,17 @@ namespace FrontEnd
                     //Shows customer account balance
                     if (transactionsType == "1")
                     {
+                        Console.Clear();
                         var Bal = BankDAL.AccList[Index].accountBalance;
                         Console.WriteLine($"Your account balance is: ${Bal}");
+                        Console.WriteLine("Press <Enter> to return to the start menu");
+                        Console.ReadLine();
                         FrontEnd.frontEnd();
                     }
                     //allows customer to deposit money
                     else if (transactionsType == "2")
                     {
+                        Console.Clear();
                         Console.WriteLine("How you putting in?");
                         var accountType = BankDAL.AccList[Index].accountType;
                         double deposit = getWithdrawDepositTransfer();
@@ -303,6 +317,7 @@ namespace FrontEnd
                     //allows customer to withdraw
                     else if (transactionsType == "3")
                     {
+                        Console.Clear();
                         Console.WriteLine("How much are you taking out?");
                         double withdraw = getWithdrawDepositTransfer();
 
@@ -339,6 +354,7 @@ namespace FrontEnd
                     //allows customer to tranfer money
                     else if (transactionsType == "4")
                     {
+                        Console.Clear();
                         Console.WriteLine("Which account are you transfering money to");
                         int toAcc = getAccountID();
                         if (!accountIDValid(toAcc))
@@ -374,6 +390,8 @@ namespace FrontEnd
                                 BusinessAccount toNewAcc2 = new BusinessAccount();
                                 toNewAcc2 = (BusinessAccount)BankDAL.AccList[toAccIndex];
                                 Console.WriteLine(toNewAcc2.deposit(transfer));
+                                Console.WriteLine("Press <Enter> to return to the start menu");
+                                Console.ReadLine();
                                 FrontEnd.frontEnd();
                             }
                             else if (toAccType == "Checking Account")
@@ -381,11 +399,15 @@ namespace FrontEnd
                                 CheckingAccount newAcc = new CheckingAccount();
                                 newAcc = (CheckingAccount)BankDAL.AccList[Index];
                                 Console.WriteLine(newAcc.withdrawal(transfer));
+                                Console.WriteLine("Press <Enter> to return to the start menu");
+                                Console.ReadLine();
                                 FrontEnd.frontEnd();
                             }
                             else
                             {
                                 Console.WriteLine("You can only transfer between checking and business");
+                                Console.WriteLine("Press <Enter> to return to the start menu");
+                                Console.ReadLine();
                                 FrontEnd.frontEnd();
                             }
                         }
@@ -401,6 +423,8 @@ namespace FrontEnd
                                 CheckingAccount toNewAcc = new CheckingAccount();
                                 toNewAcc = (CheckingAccount)BankDAL.AccList[Index];
                                 Console.WriteLine(toNewAcc.withdrawal(transfer));
+                                Console.WriteLine("Press <Enter> to return to the start menu");
+                                Console.ReadLine();
                                 FrontEnd.frontEnd();
                             }
                             else if (toAccType == "Business Account")
@@ -408,11 +432,15 @@ namespace FrontEnd
                                 BusinessAccount toNewAcc = new BusinessAccount();
                                 toNewAcc = (BusinessAccount)BankDAL.AccList[toAccIndex];
                                 Console.WriteLine(toNewAcc.deposit(transfer));
+                                Console.WriteLine("Press <Enter> to return to the start menu");
+                                Console.ReadLine();
                                 FrontEnd.frontEnd();
                             }
                             else
                             {
                                 Console.WriteLine("You can only transfer between checking and business");
+                                Console.WriteLine("Press <Enter> to return to the start menu");
+                                Console.ReadLine();
                                 FrontEnd.frontEnd();
                             }
 
@@ -420,6 +448,8 @@ namespace FrontEnd
                         else
                         {
                             Console.WriteLine("You can only transfer between checking and business");
+                            Console.WriteLine("Press <Enter> to return to the start menu");
+                            Console.ReadLine();
                             FrontEnd.frontEnd();
                         }
 
@@ -427,6 +457,7 @@ namespace FrontEnd
                     //allows customer to view all transactions of an account
                     else if (transactionsType == "5")
                     {
+                        Console.Clear();
                         var AccountType = BankDAL.AccList[Index].accountType;
 
                         if (AccountType == "Business Account")
@@ -479,12 +510,12 @@ namespace FrontEnd
                     //allows user to delete bank account
                     else if (transactionsType == "6")
                     {
-
-
+                        Console.Clear();
                         BankDAL.AccList.RemoveAt(Index);
                         Console.WriteLine($"You removed your account");
+                        Console.WriteLine("Press <Enter> to return to the start menu");
+                        Console.ReadLine();
                         FrontEnd.frontEnd();
-
 
                     }
                     else
@@ -495,6 +526,7 @@ namespace FrontEnd
                     break;
                 case "4":
                     //customer selects 4, allows customer to view all transactions under a cetrain account
+                    Console.Clear();
                     Console.WriteLine("Please enter your customer ID");
                     int customerId = getCustomerID();
                     if (!customerIDValid(customerId))
